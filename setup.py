@@ -14,6 +14,7 @@ setup(
     author_email='yjg30737@gmail.com',
     license='MIT',
     packages=find_packages(),
+    package_data={'src': ['hf-logo.svg']},
     description='Example of AI question and answer model (roberta-base-squad2) with Python desktop application',
     url='https://github.com/yjg30737/pyqt-ai-question-answer-example.git',
     long_description_content_type='text/markdown',

@@ -1,9 +1,20 @@
+import os, sys
+
+# Get the absolute path of the current script file
+script_path = os.path.abspath(__file__)
+
+# Get the root directory by going up one level from the script directory
+project_root = os.path.dirname(os.path.dirname(script_path))
+
+sys.path.insert(0, project_root)
+sys.path.insert(0, os.getcwd())  # Add the current directory as well
+
 from PyQt5.QtCore import Qt, QCoreApplication
 from PyQt5.QtGui import QGuiApplication, QFont, QIcon
-from PyQt5.QtWidgets import QMainWindow, QFormLayout, QLineEdit, QGroupBox, QVBoxLayout, QTextEdit, QWidget, \
+from PyQt5.QtWidgets import QMainWindow, QFormLayout, QLineEdit, QGroupBox, QVBoxLayout, QWidget, \
     QApplication, QTextBrowser, QFrame, QLabel, QPushButton
 
-from src.huggingFaceModelWidget import HuggingFaceModelWidget
+from src.huggingface_gui.huggingFaceModelWidget import HuggingFaceModelWidget
 from src.script import getAnswer
 
 QApplication.setAttribute(Qt.AA_EnableHighDpiScaling)

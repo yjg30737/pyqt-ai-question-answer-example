@@ -1,12 +1,10 @@
-from typing import Union
-
 from PyQt5.QtCore import Qt
 from PyQt5.QtGui import QColor
 from PyQt5.QtWidgets import QDialog, QVBoxLayout, QFrame, QPushButton, QHBoxLayout, QWidget, QApplication, QLabel, \
-    QSpacerItem, QSizePolicy, QMessageBox
+    QSpacerItem, QSizePolicy
 
-from src.huggingFaceModelClass import HuggingFaceModelClass
-from src.huggingFaceModelLoadingWidget import HuggingFaceModelLoadingWidget
+from src.huggingface_gui.huggingFaceModelClass import HuggingFaceModelClass
+from src.huggingface_gui.huggingFaceModelLoadingWidget import HuggingFaceModelLoadingWidget
 
 
 class HuggingFaceModelInputDialog(QDialog):

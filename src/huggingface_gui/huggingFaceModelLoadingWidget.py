@@ -1,7 +1,7 @@
 from PyQt5.QtCore import QThread, pyqtSignal, Qt
 from PyQt5.QtWidgets import QWidget, QLineEdit, QHBoxLayout, QPushButton, QVBoxLayout, QLabel, QMessageBox
 
-from src.huggingFaceModelClass import HuggingFaceModelClass
+from src.huggingface_gui.huggingFaceModelClass import HuggingFaceModelClass
 
 
 class InstallModelThread(QThread):

@@ -14,11 +14,9 @@ from PyQt5.QtGui import QIcon
 from PyQt5.QtWidgets import QWidget, QApplication, QVBoxLayout, QLabel, QHBoxLayout, QSpacerItem, QSizePolicy, \
     QPushButton, QDialog, QMessageBox
 
-from src.huggingFaceModelClass import HuggingFaceModelClass
-from src.huggingFaceModelInputDialog import HuggingFaceModelInputDialog
-from src.huggingFaceModelTableWidget import HuggingFaceModelTableWidget
-
-QApplication.setWindowIcon(QIcon('hf-logo.svg'))
+from src.huggingface_gui.huggingFaceModelClass import HuggingFaceModelClass
+from src.huggingface_gui.huggingFaceModelInputDialog import HuggingFaceModelInputDialog
+from src.huggingface_gui.huggingFaceModelTableWidget import HuggingFaceModelTableWidget
 
 class HuggingFaceModelWidget(QWidget):
     onModelSelected = pyqtSignal(str)
